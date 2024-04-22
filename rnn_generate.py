@@ -37,7 +37,7 @@ def generate_gan( decoder, prime_str=[48, 48, 48], predict_len=1000, temperature
     return [predicted.tolist()], output_list
 
 if __name__ == '__main__':
-    file, file_len = read_file("neg/zerowalled.dll")
+    file, file_len, _ = read_file("neg/zerowalled.dll")
 # Parse command line arguments
     argparser = argparse.ArgumentParser()
     argparser.add_argument('-filename', type=str, default='zerowalled.pt')
