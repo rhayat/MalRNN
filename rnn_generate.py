@@ -40,7 +40,7 @@ if __name__ == '__main__':
     file, file_len, _ = read_file("neg/zerowalled.dll")
 # Parse command line arguments
     argparser = argparse.ArgumentParser()
-    argparser.add_argument('-filename', type=str, default='zerowalled.pt')
+    argparser.add_argument('-filename', type=str, default='zerowalled.dll')
     argparser.add_argument('-p', '--prime_str', type=str, default=file[-100:-1])
     argparser.add_argument('-l', '--predict_len', type=int, default=1000)
     argparser.add_argument('-t', '--temperature', type=float, default=0.8)
